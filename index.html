@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | ECE Student</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Dynamic Background Elements -->
+    <canvas id="stardust"></canvas>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="container nav-content">
+            <a href="#" class="logo">Port<span class="highlight">folio</span>.</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#skills">Expertise</a></li>
+                <li><a href="#projects">Work</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text fade-in-up">
+                <p class="greeting">Hello, I am Aromal A Kurup an</p>
+                <h1 class="main-title">ECE Student &<br><span class="text-gradient">Innovator.</span></h1>
+                <p class="subtitle">Electronics and Communication Engineering 2nd-year student at Amal Jyothi College of
+                    Engineering. Passionate about Embedded Systems, Python programming, and building real-world hardware
+                    solutions.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="https://github.com" target="_blank" class="btn btn-icon"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aromal-a-kurup-44949931b/" target="_blank"
+                        class="btn btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-right">
+                <div class="glass-card profile-card">
+                    <div class="avatar-wrapper">
+                        <img src="assets/profile.jpg" alt="Aromal A Kurup" class="profile-img">
+                    </div>
+                    <h3>Electronics Engineer</h3>
+                    <p>Bridging hardware and software.</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <p>Scroll</p>
+            <i class="fa-solid fa-arrow-down bounce"></i>
+        </div>
+    </section>
+
+    <!-- Skills & Expertise -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Skills & <span class="highlight">Expertise</span></h2>
+                <p class="section-desc">My technical toolkit for designing advanced electronics and embedded systems.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card glass-panel fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                    <h3>Programming</h3>
+                    <p>Proficient in Python and C/C++. Writing clean, efficient logic for scripting, data processing,
+                        and microcontrollers.</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="skill-card glass-panel fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Embedded C</h3>
+                    <p>Firmware development, hardware-software interfacing, and low-level programming for embedded
+                        systems.</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="skill-card glass-panel fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>MATLAB</h3>
+                    <p>Utilizing MATLAB for numerical computing, signal processing, and system simulations.</p>
+                </div>
+                <!-- Skill 4 -->
+                <div class="skill-card glass-panel fade-in-up" style="transition-delay: 0.4s;">
+                    <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>Hardware Design</h3>
+                    <p>Designing digital circuits, working with IoT sensors, and rapid prototyping utilizing Arduino and
+                        related ecosystems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Selected <span class="highlight">Projects</span></h2>
+                <p class="section-desc">A showcase of my hands-on hardware and software integration projects.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-panel fade-in-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/fish_feeder.png" alt="Automated Fish Feeder" class="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Embedded C</span>
+                            <span class="tag">Microcontroller</span>
+                            <span class="tag">Motors</span>
+                        </div>
+                        <h3>Automated Fish Feeder</h3>
+                        <p>Designed and built a smart automated fish feeder utilizing a microcontroller. The system
+                            dispenses exact food amounts at scheduled intervals, reducing maintenance and ensuring
+                            precise feeding routines.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-panel fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="project-image-wrapper">
+                        <img src="assets/home_monitoring.png" alt="Advanced Home Monitoring System" class="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">IoT Sensors</span>
+                            <span class="tag">Data Logging</span>
+                        </div>
+                        <h3>Advanced Kitchen Monitoring System</h3>
+                        <p>Developed an integrated IoT framework to monitor ambient home conditions like temperature,
+                            humidity, and security using various sensors. Programmed in Python to analyze data and
+                            trigger real-time alerts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>Port<span class="highlight">folio</span>.</h2>
+                <p>Designed & Built with <i class="fa-solid fa-microchip" style="color: var(--accent-primary);"></i></p>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:aromalakurup448@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ECE Student Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
